@@ -1,0 +1,90 @@
+.transaksi h2.title {
+  font-size: 32px;
+  line-height: 115px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  border-left: none;
+}
+
+.transaksi .input-radio-transaksi {
+  display: flex;
+  margin-bottom: 30px;
+}
+.transaksi .input-radio-transaksi label {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+/* --------------- CARD ------------------- */
+.transaksi .card-transaksi {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "usaha-email nohp-bank alamat-nama rek-tanggal saldo";
+  grid-template-columns: 1fr 0.8fr 1.2fr 1fr 1fr;
+  background-color: #aca8a873;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.transaksi .card-transaksi .usaha-email {
+  grid-area: usaha-email;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px 5px 20px;
+}
+.transaksi .card-transaksi .nohp-bank {
+  grid-area: nohp-bank;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.transaksi .card-transaksi .alamat-nama {
+  grid-area: alamat-nama;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.transaksi .card-transaksi .rek-tanggal {
+  grid-area: rek-tanggal;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.transaksi .card-transaksi .saldo {
+  grid-area: saldo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #a6aba6;
+  color: white;
+}
+.transaksi .card-transaksi .saldo.minggu-ini {
+  background-color: #37ed27;
+  color: white;
+}
+.transaksi .card-transaksi .usaha-email p,
+.transaksi .card-transaksi .nohp-bank p,
+.transaksi .card-transaksi .alamat-nama p,
+.transaksi .card-transaksi .rek-tanggal p {
+  font-size: 14px;
+  margin-bottom: -15px;
+}
+.transaksi .card-transaksi .usaha-email p.bold,
+.transaksi .card-transaksi .nohp-bank p.bold,
+.transaksi .card-transaksi .alamat-nama p.bold,
+.transaksi .card-transaksi .rek-tanggal p.bold {
+  font-weight: 600;
+}
+.transaksi .card-transaksi .saldo p.bold {
+  font-weight: 600;
+}
+.transaksi .card-transaksi .rek-tanggal p.tanggal {
+  font-size: 13px;
+  margin-top: 35px;
+}
+.transaksi .card-transaksi .rek-tanggal p.tanggal.minggu-ini {
+  color: rgb(18, 221, 18);
+}

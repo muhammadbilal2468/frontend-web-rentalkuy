@@ -1,0 +1,62 @@
+.chat {
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  align-items: end;
+  justify-content: end;
+  z-index: 1;
+}
+.chat .chat-box {
+  /* box-sizing: border-box; */
+  margin: 20px;
+  position: absolute;
+  background: #fff;
+  z-index: 2;
+  width: 350px;
+  height: 380px;
+  border-radius: 15px;
+  overflow-x: scroll;
+}
+
+/* -------------------------- HEADER -------------------------------- */
+
+.chat .chat-box .header-chat {
+  display: grid;
+  position: sticky;
+  top: 0;
+  padding: 0px 20px;
+  background-color: white;
+  grid-template-areas: "back title profile";
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.chat .chat-box .header-chat i:nth-child(1) {
+  grid-area: back;
+  display: flex;
+  justify-self: flex-start;
+  font-size: 18px;
+  cursor: pointer;
+}
+.chat .chat-box .header-chat h3 {
+  grid-area: title;
+  display: flex;
+  justify-self: center;
+  font-size: 18px;
+}
+.chat .chat-box .header-chat i:nth-child(3) {
+  grid-area: profile;
+  display: flex;
+  justify-self: flex-end;
+  display: none;
+}
+
+/* -------------------- CHAT CONTENT ----------------- */
+.chat .chat-box .content-chat {
+  padding: 10px 20px;
+}

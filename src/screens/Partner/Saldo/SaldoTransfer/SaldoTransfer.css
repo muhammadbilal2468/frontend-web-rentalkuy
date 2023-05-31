@@ -1,0 +1,113 @@
+.saldo-transfer h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.saldo-transfer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* --------------------- Minggu Ini -------------- */
+
+.saldo-transfer .minggu-ini {
+  background-color: #1676ad;
+  width: 340px;
+  padding: 0px 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+}
+.saldo-transfer .minggu-ini .time {
+  display: flex;
+  gap: 10px;
+  margin-bottom: -30px;
+}
+.saldo-transfer .minggu-ini .jumlah-saldo {
+  display: flex;
+  justify-content: space-between;
+}
+.saldo-transfer .minggu-ini .jumlah-saldo .bold {
+  font-weight: bold;
+}
+
+/* --------------------- CARD -------------- */
+.saldo-transfer .card-ditransfer {
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #1676ad;
+  border-radius: 10px;
+  width: 80%;
+  height: 80px;
+  align-items: center;
+  background-color: #1676ad;
+  margin-bottom: 30px;
+}
+.saldo-transfer .card-ditransfer .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  width: 10%;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
+}
+.saldo-transfer .card-ditransfer .right {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 40px 0px 10px;
+  font-size: 18px;
+  color: white;
+  /* border: 1px solid black; */
+}
+.saldo-transfer .card-ditransfer .right .desc p.bold {
+  font-weight: 600;
+}
+.saldo-transfer .card-ditransfer .right .desc .time {
+  display: flex;
+  gap: 10px;
+}
+.saldo-transfer .card-ditransfer .right .desc .time p {
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+.saldo-transfer .card-ditransfer .right .status i {
+  background-color: rgb(148, 243, 6);
+  color: white;
+  font-size: 45px;
+  border-radius: 50%;
+}
+
+/* ------------------ TABLE ---------------- */
+.btn-saldo-ditransfer {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.btn-saldo-ditransfer .btn-eye {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.btn-saldo-ditransfer .btn-eye {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+.btn-saldo-ditransfer .btn-eye i {
+  font-weight: 600;
+}

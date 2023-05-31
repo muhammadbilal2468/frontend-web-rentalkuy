@@ -1,0 +1,32 @@
+.barang-saya {
+  height: 100%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+
+/* -------------------- BTN Action ------------------- */
+.button-menu-bs {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.button-menu-bs .button-bs {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #1676ad;
+  height: 25px;
+  width: 40px;
+  font-size: 15px;
+  border: 2px solid #1676ad;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.button-menu-bs .button-bs i {
+  font-weight: 600;
+  cursor: pointer;
+}

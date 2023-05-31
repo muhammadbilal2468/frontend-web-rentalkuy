@@ -1,0 +1,162 @@
+.admin {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 2fr 8fr;
+}
+
+.admin .sidebar {
+  grid-area: sidebar;
+  position: relative;
+  background-color: #dff3fe;
+}
+/* ------------------ Sidebar Hide -------------- */
+.admin.active {
+  grid-template-columns: 0.3fr 9.7fr;
+  transition: 0.5s;
+}
+.admin.passive {
+  transition: 0.5s;
+}
+.admin .sidebar .togle-sidebar.active {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+.admin .sidebar .togle-sidebar.passive {
+  transition: 1s;
+}
+.admin .sidebar .logo.active {
+  height: 120px;
+}
+
+.admin .sidebar .menu .list-menu.active {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.admin .sidebar .menu .list-menu.active i:nth-child(3) {
+  display: none;
+}
+.admin .sidebar .menu .list-menu .p.active {
+  display: none;
+}
+
+.admin .sidebar .menu .list-menu i:nth-child(3).active {
+  display: none;
+}
+.admin .content.active {
+  padding: 0px 55px;
+  transition: 0.5;
+}
+
+/* --------------- logo --------------- */
+.admin .sidebar .logo {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 10px 5px -1px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+.admin .sidebar .logo img.bg-logo {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.admin .sidebar .logo img:nth-child(1) {
+  z-index: 1;
+  width: 90%;
+  height: 80px;
+}
+.admin .sidebar .togle-sidebar {
+  z-index: 1;
+  position: absolute;
+  right: -15px;
+  top: 130px;
+  background: #66a8cd;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.admin .sidebar .togle-sidebar i {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* ----------------- menu ---------------- */
+.admin .sidebar .menu {
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+
+.admin .sidebar .menu .list-menu {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "icon1-menu text-menu icon3-menu"
+    "list-dd list-dd list-dd";
+  font-size: 16px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  color: #1676ad;
+  border-radius: 10px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+.admin .sidebar .menu .list-menu i.logout,
+.admin .sidebar .menu .list-menu p.logout {
+  color: red;
+}
+.admin .sidebar .menu .list-menu i:nth-child(1) {
+  grid-area: icon1-menu;
+  font-size: 19px;
+}
+.admin .sidebar .menu .list-menu a {
+  grid-area: text-menu;
+  /* border: 1px solid black; */
+}
+.admin .sidebar .menu .list-menu i:nth-child(3) {
+  grid-area: icon3-menu;
+}
+.admin .sidebar .menu .list-menu .list-menu-drop {
+  grid-area: list-dd;
+  /* margin: 10px 10px; */
+  /* border: 1px solid black; */
+}
+.admin .sidebar .menu .list-menu .list-menu-drop a {
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 7px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.admin .content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 30px;
+}
+
+.linkactive {
+  color: #71a4c2;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}

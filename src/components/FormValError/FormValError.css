@@ -1,0 +1,27 @@
+.form-validation {
+  padding: 0px 10px;
+  margin-top: -20px;
+  font-size: 13px;
+  background-color: #e3515194;
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  color: rgb(232, 232, 232);
+  display: grid;
+  grid-template-areas: "fv-left fv-right";
+  justify-content: center;
+  place-items: center;
+  gap: 10px;
+}
+.form-validation i {
+  grid-area: fv-left;
+  font-size: 24px;
+  color: white;
+}
+.form-validation p {
+  grid-area: fv-right;
+  font-weight: 100;
+}
+.form-validation p span {
+  color: white;
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+export { default as Button } from "./Button/Button";
+export { default as Alert1Btn } from "./Alert1Btn/Alert1Btn";
+export { default as Alert2_1Btn } from "./Alert2_1Btn/Alert2_1Btn";
+export { default as Alert2_2Btn } from "./Alert2_2Btn/Alert2_2Btn";
+export { default as Alert2Btn } from "./Alert2Btn/Alert2Btn";
+export { default as FormValError } from "./FormValError/FormValError";
+export { default as Table } from "./Table/Table";
+export { default as ViewBarang1 } from "./ViewBarang1/ViewBarang1";
+export { default as ViewBarang1Btn } from "./ViewBarang1Btn/ViewBarang1Btn";
+export { default as ViewBarang2 } from "./ViewBarang2/ViewBarang2";
+export { default as ViewBarang2Btn } from "./ViewBarang2Btn/ViewBarang2Btn";
+export { default as ViewBarang3 } from "./ViewBarang3/ViewBarang3";
+export { default as Notification } from "./Notification/Notification";
+export { default as ViewImagePotrait } from "./ViewImagePotrait/ViewImagePotrait";
+export { default as ViewImageLandscape } from "./ViewImageLandscape/ViewImageLandscape";
+export { default as ViewProofPayment } from "./ViewProofPayment/ViewProofPayment";

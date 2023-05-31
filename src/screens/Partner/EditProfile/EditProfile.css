@@ -1,0 +1,119 @@
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+}
+.edit-profile .header-ep {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+.edit-profile .header-ep .fa-chevron-left {
+  font-size: 24px;
+  color: #1676ad;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.edit-profile .header-ep h2 {
+  font-size: 26px;
+  color: #1676ad;
+}
+
+.edit-profile .data-profile {
+  display: grid;
+  grid-template-areas:
+    "left right"
+    "button button";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 30px;
+  /* border: 1px solid black; */
+}
+
+/* --------------------- LEFT -----------------------------  */
+.edit-profile .data-profile .left {
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.edit-profile .data-profile .left .img {
+}
+.edit-profile .data-profile .left .img img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+/* --------------------- RIGHT -----------------------------  */
+.edit-profile .data-profile .right {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border: 1px solid black; */
+}
+.edit-profile .data-profile .right .input-box-ep {
+  position: relative;
+  width: 368px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.edit-profile .data-profile .right .input-box-ep.alamat {
+  margin-top: 25px;
+}
+.edit-profile .data-profile .right .input-box-ep p {
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+.edit-profile .data-profile .right .input-box-ep input,
+.edit-profile .data-profile .right .input-box-ep select {
+  box-sizing: border-box;
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 368px;
+  padding: 0px 40px;
+  background-color: white;
+}
+.edit-profile .data-profile .right .input-box-ep .icon {
+  position: absolute;
+  left: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #1676ad;
+  /* z-index: 1; */
+}
+.edit-profile .data-profile .right .input-box-ep .fa-pen {
+  position: absolute;
+  right: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #1676ad;
+}
+
+/* --------------------- BUTTON -----------------------------  */
+.edit-profile .data-profile .button {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+}
+.edit-profile .data-profile .button button {
+  background-color: #1676ad;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 7px 0px;
+  width: 50%;
+  border: none;
+  border-radius: 15px;
+}

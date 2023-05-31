@@ -1,0 +1,95 @@
+.saldo h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.saldo h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* --------------------- MINGGU INI -------------- */
+
+.saldo .minggu-ini {
+  background-color: #1676ad;
+  width: 340px;
+  padding: 0px 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+}
+.saldo .minggu-ini .time {
+  display: flex;
+  gap: 10px;
+  margin-bottom: -30px;
+}
+.saldo .minggu-ini .jumlah-saldo {
+  display: flex;
+  justify-content: space-between;
+}
+.saldo .minggu-ini .jumlah-saldo .bold {
+  font-weight: bold;
+}
+
+/* --------------------- DIPROSEWS -------------- */
+
+.saldo .diproses,
+.saldo .ditransfer {
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #1676ad;
+  border-radius: 10px;
+  width: 80%;
+  height: 80px;
+  align-items: center;
+  cursor: pointer;
+}
+.saldo .diproses .left,
+.saldo .ditransfer .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1676ad;
+  color: white;
+  height: 100%;
+  width: 5%;
+  border: none;
+  border-radius: 8px;
+}
+.saldo .diproses .right,
+.saldo .ditransfer .right {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 40px;
+  font-size: 18px;
+  color: #1676ad;
+  /* border: 1px solid black; */
+}
+.saldo .diproses .right .desc p.bold,
+.saldo .ditransfer .right .desc p.bold {
+  font-weight: 600;
+}
+.saldo .diproses .right .desc .time,
+.saldo .ditransfer .right .desc .time {
+  display: flex;
+  gap: 10px;
+}
+.saldo .diproses .right .desc .time p,
+.saldo .ditransfer .right .desc .time p {
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+.saldo .diproses .right .status i {
+  color: #1676ad;
+  font-size: 35px;
+}
+.saldo .ditransfer .right .status i {
+  background-color: rgb(148, 243, 6);
+  color: white;
+  font-size: 45px;
+  border-radius: 50%;
+}

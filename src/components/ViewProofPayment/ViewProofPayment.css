@@ -1,0 +1,91 @@
+.vpp {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  z-index: 1;
+}
+.vpp .vpp-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  width: 600px;
+  height: 350px;
+  padding: 50px 40px 20px 40px;
+  border-radius: 15px;
+  /* border: 1px solid black; */
+}
+/* -------------------------- CLOSE -------------------------------- */
+.vpp .vpp-box .fa-rectangle-xmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+}
+
+/* -------------------------- TIME -------------------------------- */
+.vpp .vpp-box .vpp-time {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "hour minute second";
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 80%;
+  /* border: 1px solid black; */
+}
+.vpp .vpp-box .vpp-time .vpp-hour {
+  grid-area: hour;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vpp .vpp-box .vpp-time .vpp-minute {
+  grid-area: minute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vpp .vpp-box .vpp-time .vpp-second {
+  grid-area: second;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vpp .vpp-box .vpp-time .vpp-hour .title,
+.vpp .vpp-box .vpp-time .vpp-minute .title,
+.vpp .vpp-box .vpp-time .vpp-second .title {
+  font-size: 32px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.vpp .vpp-box .vpp-time .vpp-hour .time,
+.vpp .vpp-box .vpp-time .vpp-minute .time,
+.vpp .vpp-box .vpp-time .vpp-second .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  font-weight: 900;
+  color: #1676ad;
+  height: 160px;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+
+  /* border: 1px solid black; */
+}

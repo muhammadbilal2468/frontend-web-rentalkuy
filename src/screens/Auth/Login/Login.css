@@ -1,0 +1,184 @@
+.login {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-areas: "login-left login-right";
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* ----------------------------- LOGIN LEFT -------------- */
+.login-left {
+  grid-area: login-left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-left img {
+  width: 458px;
+  height: 506px;
+}
+
+/* ----------------------------- LOGIN RIGHT -------------- */
+.login .login-right {
+  grid-area: login-right;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #1676ad;
+  border-radius: 20px;
+  padding: 30px 80px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.login .login-right h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.login .login-right .sub-title {
+  font-size: 15px;
+  display: flex;
+  align-self: center;
+  color: rgb(233, 233, 233);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.login .login-right form .lupasandi {
+  display: flex;
+  color: white;
+  justify-content: end;
+  margin: 20px 0;
+}
+.login .login-right form p {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(233, 233, 233);
+}
+
+.login .login-right form p span {
+  font-weight: 400;
+  color: white;
+}
+.login .login-right button {
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 18px;
+  background: #ffffff;
+  border: 1px solid rgb(77, 75, 75);
+  color: #1676ad;
+}
+
+/* ----------------------------input text ----------------------- */
+.login .login-right form .input_box {
+  height: 40px;
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+.login .login-right form .input_box input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  background: #e7e7e7;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  /* border: 2px solid blue; */
+}
+.login .login-right form .input_box input:focus {
+  border: 2px solid #334ed7;
+}
+.login .login-right form .input_box .icon {
+  position: absolute;
+  line-height: 40px;
+  left: 0;
+  margin-left: 15px;
+  font-size: 20px;
+  color: rgb(153, 144, 144);
+}
+
+/* --------------------- */
+.input_box .icon-show {
+  position: absolute;
+  line-height: 40px;
+  right: 0;
+  margin-right: 15px;
+  font-size: 20px;
+  color: rgb(153, 144, 144);
+  cursor: pointer;
+}
+
+.login .login-right form Button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* -------------------------------- RESPONSIVE ----------------- */
+@media (max-width: 1080px) {
+  .login-left img {
+    width: 358px;
+    height: 406px;
+  }
+  .login .login-right {
+    padding: 30px 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .login-left img {
+    width: 308px;
+    height: 356px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .login .login-right h2 {
+    font-size: 26px;
+  }
+  .login .login-right .sub-title {
+    font-size: 13.5px;
+  }
+  .login .login-right form p {
+    font-size: 15px;
+  }
+  .login {
+    display: grid;
+    grid-template-areas: "login-right login-right";
+    justify-content: center;
+  }
+  .login .login-left {
+    display: none;
+  }
+  .login .login-right {
+    grid-area: login-right;
+  }
+}
+@media (max-width: 480px) {
+  .login .login-right h2 {
+    font-size: 23px;
+  }
+  .login .login-right .sub-title {
+    font-size: 12px;
+  }
+  .login .login-right form p {
+    font-size: 13px;
+  }
+  .login .login-right form .input_box input {
+    font-size: 13px;
+  }
+}

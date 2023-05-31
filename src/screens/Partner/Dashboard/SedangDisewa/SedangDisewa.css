@@ -1,0 +1,45 @@
+.sedang-disewa {
+  font-style: italic;
+  font-weight: 100;
+  color: #1676ad;
+  font-size: 13px;
+}
+
+.btn-sedang-disewa {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  gap: 10px;
+  /* border: 1px solid black; */
+}
+.btn-sedang-disewa .btn-eye {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.btn-sedang-disewa .btn-eye {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+.btn-sedang-disewa .btn-dikembalikan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37e748;
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.btn-sedang-disewa .btn-eye i {
+  font-weight: 600;
+}

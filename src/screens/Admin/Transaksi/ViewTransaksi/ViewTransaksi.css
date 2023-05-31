@@ -1,0 +1,181 @@
+.view-transaksi h2.title {
+  font-size: 32px;
+  line-height: 115px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  border-left: none;
+}
+
+/* --------------- CARD ------------------- */
+.view-transaksi .card-transaksi {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "usaha-email nohp-bank alamat-nama rek-tanggal saldo";
+  grid-template-columns: 1fr 0.8fr 1.2fr 1fr 1fr;
+  background-color: #aca8a873;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.view-transaksi .card-transaksi .usaha-email {
+  grid-area: usaha-email;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px 5px 20px;
+}
+.view-transaksi .card-transaksi .nohp-bank {
+  grid-area: nohp-bank;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.view-transaksi .card-transaksi .alamat-nama {
+  grid-area: alamat-nama;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.view-transaksi .card-transaksi .rek-tanggal {
+  grid-area: rek-tanggal;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.view-transaksi .card-transaksi .saldo {
+  grid-area: saldo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #a6aba6;
+  color: white;
+}
+.view-transaksi .card-transaksi .view-transaksi.minggu-ini {
+  background-color: #37ed27;
+  color: white;
+}
+.view-transaksi .card-transaksi .usaha-email p,
+.view-transaksi .card-transaksi .nohp-bank p,
+.view-transaksi .card-transaksi .alamat-nama p,
+.view-transaksi .card-transaksi .rek-tanggal p {
+  font-size: 14px;
+  margin-bottom: -15px;
+}
+.view-transaksi .card-transaksi .usaha-email p.bold,
+.view-transaksi .card-transaksi .nohp-bank p.bold,
+.view-transaksi .card-transaksi .alamat-nama p.bold,
+.view-transaksi .card-transaksi .rek-tanggal p.bold {
+  font-weight: 600;
+}
+.view-transaksi .card-transaksi .saldo p.bold {
+  font-weight: 600;
+}
+.view-transaksi .card-transaksi .rek-tanggal p.tanggal {
+  font-size: 13px;
+  margin-top: 35px;
+}
+.view-transaksi .card-transaksi .rek-tanggal p.tanggal.minggu-ini {
+  color: rgb(18, 221, 18);
+}
+
+/* ------------------ CARD SALDO ----------------- */
+.view-transaksi .card-saldo {
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #1676ad;
+  border-radius: 10px;
+  width: 80%;
+  height: 80px;
+  align-items: center;
+  background-color: #1676ad;
+  margin-bottom: 20px;
+}
+.view-transaksi .card-saldo .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  width: 10%;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
+}
+.view-transaksi .card-saldo .right {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 40px 0px 10px;
+  font-size: 18px;
+  color: white;
+  /* border: 1px solid black; */
+}
+.view-transaksi .card-saldo .right .desc p.bold {
+  font-weight: 600;
+}
+.view-transaksi .card-saldo .right .desc .time {
+  display: flex;
+  gap: 10px;
+}
+.view-transaksi .card-saldo .right .desc .time p {
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+.view-transaksi .card-saldo .right .status i {
+  color: white;
+  font-size: 35px;
+}
+
+/* --------------------- TABLE -------------------- */
+.btn-table-transaksi {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.btn-table-transaksi .btn-eye {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.btn-table-transaksi .btn-eye {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+.btn-table-transaksi .btn-eye i {
+  font-weight: 600;
+}
+
+/* --------------------- BUTTON -------------------- */
+.view-transaksi .btn-transaksi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.view-transaksi .btn-transaksi button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #1676ad;
+}

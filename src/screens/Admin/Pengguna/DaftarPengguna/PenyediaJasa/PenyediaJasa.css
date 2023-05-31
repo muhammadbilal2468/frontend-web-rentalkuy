@@ -1,0 +1,26 @@
+/* -------------------- BTN Action ------------------- */
+.button-menu-pj {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.button-menu-pj .button-pj {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #868484;
+  height: 25px;
+  width: 40px;
+  font-size: 15px;
+  border: 2px solid #1676ad;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.button-menu-pj .button-pj i {
+  font-weight: 600;
+  color: #1676ad;
+}

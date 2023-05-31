@@ -1,0 +1,134 @@
+.vps {
+  position: relative;
+  margin-bottom: 50px;
+}
+.vps h2.title {
+  font-size: 32px;
+  line-height: 115px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+}
+.vps .vps-content {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 2.8fr 1.2fr;
+}
+
+/* ----------------------- BACK ------------------  */
+.vps .vps-content .fa-chevron-left {
+  position: absolute;
+  margin-top: 25px;
+  font-size: 24px;
+  color: #1676ad;
+  cursor: pointer;
+}
+/* ----------------------- LEFT ------------------- */
+.vps .vps-content .vps-left {
+  grid-area: left;
+  padding-left: 40px;
+}
+.vps .vps-content .vps-left h3 {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 20px;
+  width: 347px;
+  border: none;
+  color: #1676ad;
+  background: #dff3fe;
+  border-radius: 5px;
+  padding: 5px 0px 5px 10px;
+}
+.vps .vps-content .vps-left .pengguna {
+  font-weight: 700;
+  font-size: 18px;
+}
+.vps .vps-content .vps-left .vps-profile {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+.vps .vps-content .vps-left .vps-profile img {
+  width: 38px;
+  height: 38px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.vps .vps-content .vps-left .vps-data {
+  padding-left: 60px;
+  display: flex;
+  gap: 30px;
+}
+.vps .vps-content .vps-left .vps-data .left {
+  width: 100%;
+}
+.vps .vps-content .vps-left .vps-data .left .vps-data-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  height: 42px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.vps .vps-content .vps-left .vps-data .left .vps-data-box p {
+  font-size: 15px;
+  color: gray;
+}
+.vps .vps-content .vps-left .vps-data .right {
+  width: 100%;
+}
+.vps .vps-content .vps-left .vps-data .right .vps-image-box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 143px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.vps .vps-content .vps-left .vps-data .right .vps-image-box p {
+  position: absolute;
+  display: flex;
+  top: -40px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.vps .vps-content .vps-left .vps-data .right .vps-image-box .img1 {
+  width: 173px;
+  height: 114px;
+  border: 1px solid black;
+}
+.vps .vps-content .vps-left .vps-data .right .vps-image-box .img2 {
+  width: 87px;
+  height: 116px;
+  border: 1px solid black;
+}
+.vps .vps-content button {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1676ad;
+  color: white;
+  padding: 7px 0px;
+  width: 60%;
+  margin-left: 20%;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* ----------------------- RIGHT ------------------- */
+.vps .vps-content .vps-right {
+  grid-area: right;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.vps .vps-content .vps-right img {
+  width: 100%;
+  height: 350px;
+}

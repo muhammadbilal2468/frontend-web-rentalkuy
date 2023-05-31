@@ -1,0 +1,36 @@
+.dp h2.title {
+  font-size: 32px;
+  line-height: 115px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+.dp .dp-btn {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 27px;
+}
+.dp .dp-btn .btn-ps,
+.dp .dp-btn .btn-pj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border: 1px solid rgba(22, 118, 173, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 209px;
+  height: 45px;
+  font-weight: 600;
+}
+.dp .dp-btn .btn-ps p,
+.dp .dp-btn .btn-pj p {
+  color: #1676ad99;
+}
+
+/* ------ btn Active ------- */
+.btn-dp-active {
+  background-color: #dff3fe;
+}
+.dp .dp-btn .btn-ps.btn-dp-active,
+.dp .dp-btn .btn-pj.btn-dp-active {
+  color: #1676ad;
+}

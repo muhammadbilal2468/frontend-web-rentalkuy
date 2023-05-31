@@ -1,0 +1,41 @@
+/* --------------- FILTER ------------------------ */
+.batal {
+  position: relative;
+}
+.batal .input-radio-batal {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+}
+
+/* --------------- BUTTON ------------------------ */
+.batal .btn-batal {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.batal .btn-batal .btn-eye,
+.batal .btn-batal .btn-delete {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.batal .btn-batal .btn-eye,
+.batal .btn-batal .btn-delete {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+
+.batal .btn-batal .btn-eye i,
+.batal .btn-batal .btn-delete i {
+  font-weight: 600;
+}

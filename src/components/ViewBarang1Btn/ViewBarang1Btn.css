@@ -1,0 +1,153 @@
+.vb1btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  z-index: 1;
+}
+.vb1btn .vb1btn-box {
+  /* box-sizing: border-box; */
+  display: grid;
+  position: relative;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  background: #fff;
+  width: 750px;
+  /* height: 450px; */
+  border-radius: 15px;
+  padding: 40px;
+  gap: 10px;
+}
+/* -------------------------- CLOSE -------------------------------- */
+.vb1btn .vb1btn-box .fa-rectangle-xmark {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+}
+
+/* -------------------------- LEFT -------------------------------- */
+.vb1btn .vb1btn-box .left {
+  box-sizing: border-box;
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.vb1btn .vb1btn-box .left img {
+  border-radius: 10px;
+  height: 350px;
+  width: 85%;
+  /* border: 1px solid black; */
+}
+.vb1btn .vb1btn-box .left i {
+  width: 7%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1676ad;
+}
+
+/* -------------------------- RIGHT -------------------------------- */
+.vb1btn .vb1btn-box .right {
+  box-sizing: border-box;
+  grid-area: right;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.vb1btn .vb1btn-box .right h2 {
+  margin-top: -5px;
+}
+
+.vb1btn .vb1btn-box .right .rating {
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  /* border: 1px solid black; */
+}
+.vb1btn .vb1btn-box .right .rating i {
+  font-size: 20px;
+  color: gold;
+}
+.vb1btn .vb1btn-box .right .rating p:nth-child(2) {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+.vb1btn .vb1btn-box .right .rating p:nth-child(3) {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #1676adb6;
+}
+.vb1btn .vb1btn-box .right .price-day {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 35px;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  border: none;
+  padding: 3px 25px;
+  margin-top: 10px;
+}
+
+.vb1btn .vb1btn-box .right .price-day p:nth-child(1) {
+  color: #1676ad;
+  font-weight: 700;
+}
+.vb1btn .vb1btn-box .right .price-day p:nth-child(2) {
+  color: #1676ad99;
+  font-weight: 600;
+}
+
+.vb1btn .vb1btn-box .right .detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.623);
+}
+.vb1btn .vb1btn-box .right .detail.desc {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.vb1btn .vb1btn-box .right .detail .desc {
+  color: #1676ad;
+  font-weight: 700;
+  font-size: 16px;
+}
+.vb1btn .vb1btn-box .right .detail .value {
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
+.vb1btn .vb1btn-box .right .detail .value.desc {
+  margin-top: -10px;
+}
+.vb1btn .vb1btn-box .right .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.vb1btn .vb1btn-box .right .button button {
+  margin-top: 20px;
+  border: none;
+  background: #1676ad;
+  color: white;
+  width: 60%;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 10px;
+}

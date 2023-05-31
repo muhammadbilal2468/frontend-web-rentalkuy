@@ -1,0 +1,110 @@
+.team {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.team .fa-chevron-left {
+  font-size: 36px;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  cursor: pointer;
+  color: black;
+}
+.team .team-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* ----------------------- BG --------------------- */
+.team .team-itl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 300px;
+}
+.team .team-ibl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+.team .team-itr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 230px;
+}
+.team .team-ibr {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 350px;
+}
+
+/* ----------------------- FOTO --------------------- */
+.team .person-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 10px;
+}
+.team .person-wrp .person {
+  box-sizing: border-box;
+  position: relative;
+  width: 222px;
+  height: 246px;
+}
+.team .person-wrp .person img.bgperson {
+  box-sizing: border-box;
+  position: absolute;
+  width: 80%;
+  height: 95%;
+  left: 10px;
+  top: -15px;
+}
+.team .person-wrp .person img.img-person {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.team .person-wrp .person img.img-person:hover {
+  margin-top: -25px;
+  margin-left: -20px;
+}
+.team .person-wrp .person .name-person {
+  /* box-sizing: border-box; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 20px;
+  height: 40px;
+  left: 60px;
+  width: 85%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 35px;
+  font-size: 13px;
+}
+.team .person-wrp .person .name-person p:nth-child(1) {
+  font-weight: bolder;
+  margin-top: 0px;
+  margin-bottom: -15px;
+}

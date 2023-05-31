@@ -1,0 +1,95 @@
+.dashboard {
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+/* ------------------------------- STATUS BARANG ------------------------ */
+
+.dashboard .status-brg {
+}
+
+.dashboard .status-brg h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.dashboard .status-brg .box-sb {
+  display: grid;
+  grid-template-areas: "box1 box2 box3";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 65px;
+}
+.dashboard .status-brg .box-sb .box-sb1,
+.dashboard .status-brg .box-sb .box-sb2,
+.dashboard .status-brg .box-sb .box-sb3 {
+  box-sizing: border-box;
+  padding: 5px 18px;
+  background: #6c91a6;
+  border-radius: 15px;
+  color: white;
+}
+
+.dashboard .status-brg .box-sb .box-sb1 p,
+.dashboard .status-brg .box-sb .box-sb2 p,
+.dashboard .status-brg .box-sb .box-sb3 p {
+  font-size: 16px;
+  color: rgb(240, 238, 238);
+}
+.dashboard .status-brg .box-sb .box-sb1 h3,
+.dashboard .status-brg .box-sb .box-sb2 h3,
+.dashboard .status-brg .box-sb .box-sb3 h3 {
+  font-size: 24px;
+  margin-top: -10px;
+}
+
+/* --------------------------------- ANALISIS -------------------------- */
+
+.dashboard .analisis {
+  margin-top: 50px;
+}
+.dashboard .analisis .analisis-data {
+  box-sizing: border-box;
+  margin-top: -30px;
+  display: grid;
+  grid-template-areas: "jt tbt";
+  grid-template-columns: 1.6fr 1.4fr;
+  gap: 30px;
+}
+
+.dashboard .analisis .analisis-data .jt {
+  grid-area: jt;
+}
+
+.dashboard .analisis .analisis-data .tbt {
+  grid-area: tbt;
+}
+
+.dashboard .analisis h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.dashboard .analisis h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1676ad;
+}
+
+/* -------------- input select ---------- */
+.dashboard .analisis .jt .select,
+.dashboard .analisis .tbt .select {
+  border: none;
+  color: white;
+  background-color: #7795a6;
+  width: 220px;
+  height: 39px;
+  padding: 0px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+/* ---------------- grafik --------------- */
+.dashboard .analisis .analisis-data .jt .chart {
+  width: 100%;
+}
+.dashboard .analisis .analisis-data .tbt .chart {
+  width: 75%;
+}

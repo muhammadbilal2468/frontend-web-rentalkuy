@@ -1,0 +1,23 @@
+.syarat-ketentuan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  justify-content: center;
+}
+.syarat-ketentuan .fa-chevron-left {
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  font-size: 30px;
+}
+.h2-syarat-ketentuan {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+.span-sk-notes {
+  font-weight: bold;
+}

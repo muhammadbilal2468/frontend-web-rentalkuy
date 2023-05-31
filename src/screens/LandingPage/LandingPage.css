@@ -1,0 +1,669 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.landing-page {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "lp-header"
+    "lp-home"
+    "lp-about"
+    "lp-download"
+    "lp-vm"
+    "lp-testi"
+    "lp-search"
+    "lp-footer";
+}
+
+/* --------------------------- HEADER ------------------------- */
+.landing-page .lp-header {
+  grid-area: lp-header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 120px;
+}
+.landing-page .lp-header .logo img,
+.landing-page .lp-footer .lp-footer-logo img {
+  width: 200px;
+  height: 90px;
+}
+.landing-page .lp-header .menu p {
+  color: #868484;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+.landing-page .lp-header .menu p:hover {
+  background-color: #1676ad;
+  color: white;
+}
+
+/* --------------------------- HOME ------------------------- */
+.landing-page .lp-home {
+  grid-area: lp-home;
+  display: grid;
+  grid-template-areas: "lp-home-left lp-home-right";
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 120px;
+  /*  */
+}
+.landing-page .lp-home .lp-home-left {
+  grid-area: lp-home-left;
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.landing-page .lp-home .lp-home-right {
+  grid-area: lp-home-right;
+  /* width: 50%; */
+  display: flex;
+  justify-content: end;
+}
+.landing-page .lp-home .lp-home-left h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1676ad;
+  margin-bottom: -25px;
+}
+.landing-page .lp-home .lp-home-left h2 {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.landing-page .lp-home .lp-home-left p {
+  color: #868484;
+  font-size: 20px;
+  width: 75%;
+}
+.landing-page .lp-home .lp-home-left button {
+  background: #1676ad;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 12px 35px;
+  margin-bottom: 10px;
+}
+.landing-page .lp-home .lp-home-right img {
+  width: 500px;
+  height: 400px;
+  display: flex;
+}
+
+/* --------------------------- ABOUT ------------------------- */
+.landing-page .lp-about {
+  grid-area: lp-about;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 120px;
+  /*  */
+}
+.landing-page .lp-about h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+.landing-page .lp-about p {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #868484;
+}
+.landing-page .lp-about .lp-about-icon {
+  margin: 53px 0px 134px 0px;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  /*  */
+}
+.landing-page .lp-about .lp-about-icon i {
+  color: #1676ad;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  background-color: #e4f5ff;
+  border-radius: 50%;
+}
+.landing-page .lp-about .lp-about-icon p {
+  color: black;
+  font-weight: 600;
+  line-height: 40px;
+  margin-left: -150px;
+}
+
+.landing-page .lp-about .lp-about3,
+.landing-page .lp-about .lp-about4 {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 90px;
+  /*  */
+}
+.landing-page .lp-about .lp-about3 .lp-about3-left,
+.landing-page .lp-about .lp-about4 .lp-about4-right {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  /*  */
+}
+.landing-page .lp-about .lp-about3 .lp-about3-left img,
+.landing-page .lp-about .lp-about4 .lp-about4-right img {
+  display: flex;
+  align-content: center;
+  width: 450px;
+  height: 400px;
+}
+.landing-page .lp-about .lp-about3 .lp-about3-right,
+.landing-page .lp-about .lp-about4 .lp-about4-left {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: 50%;
+  gap: 15px;
+  /*  */
+}
+.landing-page .lp-about .lp-about3 .lp-about3-right h2,
+.landing-page .lp-about .lp-about4 .lp-about4-left h2 {
+  text-align: start;
+}
+.landing-page .lp-about .lp-about3 .lp-about3-right p,
+.landing-page .lp-about .lp-about4 .lp-about4-left p {
+  text-align: start;
+}
+
+/* ------------------------- DOWNLOAD ---------------------- */
+.landing-page .lp-download {
+  grid-area: lp-download;
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0px 120px;
+}
+.landing-page .lp-download .left {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing-page .lp-download .left h2 {
+  font-weight: 700;
+  font-size: 56px;
+}
+.landing-page .lp-download .left p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #868484;
+  margin-top: -20px;
+}
+.landing-page .lp-download .left button {
+  background-color: #1676ad;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 60px;
+  margin-top: 10px;
+}
+.landing-page .lp-download .right {
+  grid-area: img;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.landing-page .lp-download .right img {
+  width: 400px;
+  height: 425px;
+  /* margin-right: -100px; */
+  /* border: 1px solid black; */
+}
+
+/* ------------------- VISI DAN MISI----------------- */
+.landing-page .lp-vm {
+  grid-area: lp-vm;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  background: #e4f5ff;
+  border-radius: 50px;
+  padding: 30px 40px;
+  width: 80%;
+  justify-self: center;
+  margin: 100px 120px;
+}
+.landing-page .lp-vm .lp-vm-visi {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-self: start;
+  margin-bottom: -30px;
+}
+.landing-page .lp-vm .lp-vm-visi h2 {
+  font-weight: 700;
+  font-size: 46px;
+  margin-bottom: -5px;
+}
+.landing-page .lp-vm .lp-vm-visi p,
+.landing-page .lp-vm .lp-vm-misi p {
+  background: #4591bd;
+  border-radius: 25px;
+  font-weight: 100;
+  font-size: 20px;
+  color: rgb(245, 245, 245);
+  padding: 24px 14px;
+}
+.landing-page .lp-vm .lp-vm-misi {
+  flex-direction: column;
+  display: flex;
+  width: 60%;
+  align-self: end;
+}
+.landing-page .lp-vm .lp-vm-misi h2 {
+  font-weight: 700;
+  font-size: 46px;
+  text-align: end;
+  margin-bottom: -5px;
+}
+
+/* ---------------------------- TESTIMONIAL --------------------- */
+.landing-page .lp-testi {
+  grid-area: lp-testi;
+  display: grid;
+  grid-template-areas: "lp-testi-title lp-testi-img lp-testi-desc";
+  grid-template-columns: 2fr 1fr 2fr;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin: 50px 120px;
+}
+.landing-page .lp-testi .lp-testi-title {
+  grid-area: lp-testi-title;
+  /*  */
+}
+.landing-page .lp-testi .lp-testi-title h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.landing-page .lp-testi .lp-testi-img {
+  position: relative;
+  grid-area: lp-testi-img;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 320px;
+  /*  */
+}
+.landing-page .lp-testi .lp-testi-img img:nth-child(1) {
+  width: 110px;
+  height: 250px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.landing-page .lp-testi .lp-testi-img img:nth-child(2) {
+  position: absolute;
+  width: 276px;
+  height: 276px;
+  z-index: -1;
+}
+.landing-page .lp-testi .lp-testi-desc {
+  grid-area: lp-testi-desc;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: end;
+  /*  */
+}
+.landing-page .lp-testi .lp-testi-desc p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #868484;
+}
+.landing-page .lp-testi .lp-testi-desc p:nth-child(2) {
+  color: #1676ad;
+  font-weight: 700;
+}
+
+/* ---------------------------- SEARCH --------------------- */
+.landing-page .lp-search {
+  grid-area: lp-search;
+  margin-bottom: 90px;
+  background: #e4f5ff;
+  border-radius: 50px;
+  padding: 56px 61px;
+  display: grid;
+  grid-template-areas: "lp-search-left lp-search-right";
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  border: none;
+  margin: 50px 120px;
+}
+.landing-page .lp-search-left {
+  grid-area: lp-search-left;
+}
+.landing-page .lp-search-left h2 {
+  font-weight: 700;
+  font-size: 56px;
+}
+.landing-page .lp-search-left p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #868484;
+}
+.landing-page .lp-search-right {
+  grid-area: lp-search-right;
+  display: flex;
+  justify-content: center;
+}
+.landing-page .lp-search-right button {
+  display: flex;
+  place-self: center;
+  background: #1676ad;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 12px 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* ---------------------------- FOOTER --------------------- */
+.landing-page .lp-footer {
+  box-sizing: border-box;
+  grid-area: lp-footer;
+  display: grid;
+  grid-template-areas:
+    "perusahaan hubungi sosmed"
+    "gabung tim-faq unduh";
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #1676ad;
+  margin-top: 50px;
+  padding: 30px 120px 20px 120px;
+}
+.landing-page .lp-footer .left p,
+.landing-page .lp-footer .center p {
+  margin-bottom: 25px;
+}
+.lp-footer .perusahaan {
+  grid-area: perusahaan;
+}
+.lp-footer .gabung {
+  grid-area: gabung;
+}
+.lp-footer .hubungi {
+  grid-area: hubungi;
+}
+.lp-footer .tim-faq {
+  grid-area: tim-faq;
+}
+.landing-page .lp-footer .perusahaan p,
+.landing-page .lp-footer .gabung p,
+.landing-page .lp-footer .hubungi p,
+.landing-page .lp-footer .tim-faq p {
+  font-size: 16px;
+  color: rgb(235, 221, 221);
+  font-weight: 500;
+}
+.landing-page .lp-footer .perusahaan p.title,
+.landing-page .lp-footer .gabung p.title,
+.landing-page .lp-footer .hubungi p.title,
+.landing-page .lp-footer .tim-faq p.title {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.landing-page .lp-footer i {
+  font-size: 28px;
+  color: #1676ad;
+  cursor: pointer;
+}
+.lp-footer .sosmed {
+  box-sizing: border-box;
+  grid-area: sosmed;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.897);
+  border-radius: 20px;
+  /* margin-top: 15px; */
+  padding: 20px;
+}
+.lp-footer .sosmed p {
+  margin-top: -10px;
+  color: #1676ad;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.lp-footer .sosmed .akun-sosmed {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+.lp-footer .sosmed i {
+  font-size: 40px;
+  margin-top: -10px;
+}
+.lp-footer .unduh {
+  box-sizing: border-box;
+  grid-area: unduh;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.897);
+  border-radius: 20px;
+  padding: 20px;
+}
+.lp-footer .unduh p {
+  color: #1676ad;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.lp-footer .unduh i {
+  font-size: 48px;
+  padding-right: 20px;
+}
+
+/* ------------------------------ RESPONSIVE ------------- */
+@media (max-width: 1080px) {
+  .landing-page {
+    box-sizing: border-box;
+  }
+  .landing-page .lp-home .lp-home-left h2,
+  .landing-page .lp-about h2,
+  .landing-page .lp-download .left h2,
+  .landing-page .lp-vm .lp-vm-visi h2,
+  .landing-page .lp-vm .lp-vm-misi h2,
+  .landing-page .lp-testi .lp-testi-title h2,
+  .landing-page .lp-search-left h2 {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .landing-page .lp-home .lp-home-right img,
+  .landing-page .lp-about .lp-about3 .lp-about3-left img,
+  .landing-page .lp-about .lp-about4 .lp-about4-right img {
+    width: 350px;
+    height: 280px;
+  }
+  .landing-page .lp-testi .lp-testi-img img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .landing-page .lp-about .lp-about-icon p,
+  .landing-page .lp-download .left p {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 960px) {
+  .landing-page {
+    box-sizing: border-box;
+  }
+  .landing-page .lp-header,
+  .landing-page .lp-home,
+  .landing-page .lp-about,
+  .landing-page .lp-download,
+  .landing-page .lp-testi,
+  .landing-page .lp-search {
+    margin: 20px 50px;
+  }
+  .landing-page .lp-footer {
+    padding: 20px 50px 0px 50px;
+  }
+  .landing-page .lp-header .logo img {
+    width: 180px;
+    height: 70px;
+  }
+  .landing-page .lp-home .lp-home-left h2,
+  .landing-page .lp-about h2,
+  .landing-page .lp-vm .lp-vm-visi h2,
+  .landing-page .lp-vm .lp-vm-misi h2,
+  .landing-page .lp-testi .lp-testi-title h2,
+  .landing-page .lp-search-left h2 {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .landing-page .lp-home .lp-home-right img,
+  .landing-page .lp-about .lp-about3 .lp-about3-left img,
+  .landing-page .lp-about .lp-about4 .lp-about4-right img,
+  .landing-page .lp-download .right img {
+    width: 300px;
+    height: 250px;
+  }
+  .landing-page .lp-testi .lp-testi-img {
+    display: none;
+  }
+
+  .landing-page .lp-about .lp-about-icon p {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+
+  .landing-page .lp-vm .lp-vm-visi,
+  .landing-page .lp-vm .lp-vm-misi {
+    width: 80%;
+  }
+
+  .landing-page .lp-testi {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+      "lp-testi-title lp-testi-title lp-testi-title"
+      "lp-testi-desc lp-testi-desc lp-testi-desc";
+  }
+
+  .landing-page .lp-search {
+    display: grid;
+    grid-template-areas:
+      "lp-search-left lp-search-left"
+      "lp-search-right lp-search-right";
+    text-align: center;
+  }
+  .landing-page .lp-footer {
+    display: grid;
+    grid-template-areas:
+      "perusahaan hubungi"
+      "gabung tim-faq"
+      "sosmed unduh"
+      "sosmed unduh";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .landing-page .lp-footer p {
+    font-size: 15px;
+  }
+  .landing-page .lp-footer i {
+    font-size: 30px;
+  }
+}
+/* --------- */
+@media screen and (max-width: 640px) {
+  .landing-page {
+    box-sizing: border-box;
+  }
+  .landing-page .lp-header,
+  .landing-page .lp-home,
+  .landing-page .lp-about,
+  .landing-page .lp-download,
+  .landing-page .lp-testi,
+  .landing-page .lp-search {
+    margin: 20px 30px;
+  }
+  .landing-page .lp-footer {
+    padding: 20px 30px 0px 30px;
+  }
+  .landing-page .lp-header .logo img {
+    width: 150px;
+    height: 60px;
+  }
+  .landing-page .lp-about .lp-about-icon {
+    font-size: 18px;
+  }
+  .landing-page .lp-about .lp-about-icon i {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .landing-page .lp-home .lp-home-left {
+    display: grid;
+    grid-area: home-left;
+    text-align: center;
+  }
+  .landing-page .lp-home .lp-home-right {
+    display: none;
+  }
+  .landing-page .lp-download {
+    display: grid;
+    grid-template-areas: "text text";
+    text-align: center;
+  }
+  .landing-page .lp-download .right {
+    display: none;
+  }
+  .landing-page .lp-vm .lp-vm-visi,
+  .landing-page .lp-vm .lp-vm-misi {
+    width: 100%;
+  }
+  .landing-page .lp-search {
+    padding: 20px 20px;
+  }
+  .landing-page .lp-search-left h2,
+  .landing-page .lp-search-left p {
+    text-align: center;
+  }
+  .landing-page .lp-footer {
+    display: grid;
+    grid-template-areas:
+      "perusahaan hubungi"
+      "gabung tim-faq"
+      "sosmed sosmed"
+      "unduh unduh";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .landing-page .lp-footer p {
+    font-size: 18px;
+  }
+  .landing-page .lp-footer i {
+    font-size: 30px;
+  }
+}

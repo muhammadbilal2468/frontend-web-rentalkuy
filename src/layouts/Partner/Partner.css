@@ -1,0 +1,206 @@
+.partner {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 2fr 8fr;
+}
+
+/* ------------------ Sidebar Hide -------------- */
+.partner.active {
+  grid-template-columns: 0.3fr 9.7fr;
+  transition: 0.5s;
+}
+.partner.passive {
+  transition: 0.5s;
+}
+.partner .sidebar .togle-sidebar.active {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+.partner .sidebar .togle-sidebar.passive {
+  transition: 1s;
+}
+.partner .sidebar .menu .list-menu.active {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.partner .sidebar .menu .list-menu.active i:nth-child(3) {
+  display: none;
+}
+.partner .sidebar .menu .list-menu .p.active {
+  display: none;
+}
+
+.partner .sidebar .menu .list-menu i:nth-child(3).active {
+  display: none;
+}
+.partner .content.active {
+  padding: 0px 55px;
+  transition: 0.5;
+}
+
+/* -------------------------- HEADER --------------------- */
+.partner .header {
+  grid-area: header;
+  box-sizing: border-box;
+  height: 120px;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 7px 5px 1px rgba(0, 0, 0, 0.25);
+  padding: 0px 30px;
+  /* border: 1px solid black; */
+}
+.partner .header .toko {
+  grid-area: left;
+}
+.partner .header .toko h3 {
+  font-size: 24px;
+  color: #1676ad;
+}
+.partner .header .toko h2 {
+  font-size: 32px;
+  color: #1676ad;
+  margin-top: -25px;
+}
+.partner .header .right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.partner .header .right i.fa-bell,
+.partner .header .right i.fa-comment-dots {
+  color: #16618dad;
+  font-size: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.partner .header .right .profil {
+  grid-area: right;
+  cursor: pointer;
+}
+.partner .header .right .profil {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  background: #dff3fe;
+  border-radius: 30px;
+  padding: 5px 5px;
+  gap: 15px;
+}
+.partner .header .right .profil img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* ----------------------------- SIDEBAR --------------------------- */
+.partner .sidebar {
+  grid-area: sidebar;
+  position: relative;
+  background-color: #dff3fe;
+  /* border: 1px solid black; */
+}
+
+.partner .sidebar .togle-sidebar {
+  z-index: 1;
+  position: absolute;
+  right: -15px;
+  top: 120px;
+  background: #66a8cd;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.partner .sidebar .togle-sidebar i {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+/* --------------- logo --------------- */
+.partner .sidebar .logo {
+  position: relative;
+  box-sizing: border-box;
+  height: 120px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 7px 5px 1px rgba(0, 0, 0, 0.25);
+  /* border: 1px solid black; */
+}
+
+.partner .sidebar .logo img.bg-logo {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.partner .sidebar .logo img:nth-child(1) {
+  z-index: 1;
+  width: 90%;
+  height: 80px;
+}
+
+/* --------------- menu ------------- */
+.partner .sidebar .menu {
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+}
+
+.partner .sidebar .menu .list-menu {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "icon1 text-menu";
+  font-size: 16px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+  align-items: center;
+  color: #1676ad;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+.partner .sidebar .menu .list-menu i {
+  grid-area: icon1;
+  font-size: 19px;
+}
+.partner .sidebar .menu .list-menu p {
+  grid-area: text-menu;
+  text-align: start;
+  /* border: 1px solid black; */
+}
+
+/* ------------------------------- CONTENT ------------------------- */
+.partner .content {
+  grid-area: content;
+  padding: 10px 30px;
+  /* border: 1px solid black; */
+}
+
+.linkactive {
+  color: #71a4c2;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}

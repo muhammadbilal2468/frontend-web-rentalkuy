@@ -1,0 +1,30 @@
+.btn {
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-size-md {
+  padding: 12px 35px;
+  font-size: 20px;
+}
+.btn-size-form {
+  padding: 8px 18px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn-size-alert {
+  padding: 8px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 20px;
+}
+.btn-color-primary {
+  background: #1676ad;
+  color: white;
+}
+.btn-color-white {
+  background: #ffffff;
+  border: 1px solid rgb(77, 75, 75);
+  color: #1676ad;
+}

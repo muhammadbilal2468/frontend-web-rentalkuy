@@ -1,0 +1,101 @@
+/* ------------------ SEARCH ---------------- */
+.search {
+  box-sizing: border-box;
+  grid-area: search;
+  position: relative;
+  height: 35px;
+  width: 290px;
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+}
+.search i {
+  box-sizing: border-box;
+  position: absolute;
+  line-height: 40px;
+  left: 15px;
+  color: #868484;
+  z-index: 1;
+}
+.search input {
+  box-sizing: border-box;
+  position: absolute;
+  width: 290px;
+  line-height: 35px;
+  padding-left: 35px;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* ------------------ TABLE ----------------- */
+table {
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+}
+table thead {
+  background: #1676ad;
+  border-radius: 10px;
+}
+table thead tr {
+  text-align: center;
+}
+table thead tr td {
+  color: white;
+  padding: 5px 10px;
+}
+
+table tbody {
+  background-color: white;
+}
+table tbody tr {
+  text-align: center;
+}
+table tbody tr td {
+  padding: 5px 10px;
+}
+table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+table tbody tr:nth-child(odd) {
+  background: white;
+}
+
+/* =--------- PAGEINATION ------------- */
+.pageination {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.pageination .btn-prev {
+  border: none;
+  background-color: white;
+  font-size: 24px;
+  color: #1676ad;
+  cursor: pointer;
+}
+.pageination .page {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.pageination .btn-next {
+  border: none;
+  background-color: white;
+  font-size: 24px;
+  color: #1676ad;
+  cursor: pointer;
+}
+.pageination .per-page {
+  position: absolute;
+  right: 15px;
+  border-color: gray;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 20px;
+  color: #1676ad;
+  cursor: pointer;
+}

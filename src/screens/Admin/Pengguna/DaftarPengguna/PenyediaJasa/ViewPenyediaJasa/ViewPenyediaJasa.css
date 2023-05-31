@@ -1,0 +1,196 @@
+.vpj {
+  position: relative;
+  margin-bottom: 50px;
+}
+.vpj h2.title {
+  font-size: 32px;
+  line-height: 115px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+}
+.vpj .vpj-content {
+  grid-area: left;
+  padding-left: 40px;
+}
+
+/* ------------------ BACK -------------------  */
+.vpj .vpj-content .fa-chevron-left {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 25px;
+  font-size: 24px;
+  color: #1676ad;
+  cursor: pointer;
+}
+
+.vpj .vpj-content {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: repeat;
+  grid-template-columns: 3fr 1fr;
+}
+/* ---------------------------- LEFT -------------------------  */
+.vpj .vpj-content .vpj-left {
+  grid-area: left;
+}
+
+.vpj .vpj-content h3 {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 20px;
+  width: 347px;
+  border: none;
+  color: #1676ad;
+  background: #dff3fe;
+  border-radius: 5px;
+  padding: 5px 0px 5px 10px;
+}
+
+.vpj .vpj-content .vpj-user {
+  display: grid;
+  grid-template-areas: "user-left user-right";
+  grid-template-columns: 1.2fr 1fr;
+  gap: 15px;
+}
+
+/* ----------- USER LEFT ----------- */
+.vpj .vpj-content .vpj-user .left {
+  grid-area: user-left;
+}
+.vpj .vpj-content .vpj-user .left .pengguna {
+  font-weight: 700;
+  font-size: 18px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-profile {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+.vpj .vpj-content .vpj-user .left .vpj-profile img {
+  width: 38px;
+  height: 38px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left {
+  margin-left: 60px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-data-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  height: 42px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-data-box p {
+  font-size: 15px;
+  color: gray;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-image-box.ktp {
+  margin-top: 30px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-image-box.foto {
+  margin-top: -10px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-image-box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 143px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-image-box p {
+  position: absolute;
+  display: flex;
+  top: -40px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-image-box .img1 {
+  width: 173px;
+  height: 114px;
+  border: 1px solid black;
+}
+.vpj .vpj-content .vpj-user .left .vpj-data-left .vpj-image-box .img2 {
+  width: 87px;
+  height: 116px;
+  border: 1px solid black;
+}
+
+/* ----------- USER RIGHT ---------- */
+.vpj .vpj-content .vpj-user .right {
+  grid-area: user-right;
+  margin-right: 20px;
+}
+.vpj .vpj-content .vpj-user .right .penyedia {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 75px;
+}
+.vpj .vpj-content .vpj-user .right .vpj-data-right .vpj-data-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  height: 42px;
+  padding-left: 50px;
+  border-radius: 10px;
+}
+.vpj .vpj-content .vpj-user .right .vpj-data-right .vpj-data-box.address {
+  height: 80px;
+}
+.vpj .vpj-content .vpj-user .right .vpj-data-right .vpj-data-box i {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  left: 18px;
+  font-size: 18px;
+  color: gray;
+}
+.vpj .vpj-content .vpj-user .right .vpj-data-right .vpj-data-box p {
+  font-size: 15px;
+  color: gray;
+}
+
+/* ---------------------------- RIGHT -------------------------  */
+.vpj .vpj-content .vpj-right {
+  grid-area: right;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.vpj .vpj-content .vpj-right img {
+  width: 100%;
+  height: 350px;
+  border: 1px solid black;
+}
+
+/* ------------------- BUTTON ------------------ */
+.vpj .vpj-content .vpj-btn {
+  display: flex;
+  margin-left: 60px;
+  gap: 20px;
+}
+
+.vpj .vpj-content .vpj-btn button,
+.vpj .vpj-content .vpj-btn button {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1676ad;
+  color: white;
+  width: 100%;
+  padding: 7px 40px;
+  cursor: pointer;
+}

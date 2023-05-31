@@ -1,0 +1,111 @@
+.saldo-proses h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.saldo-proses h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* --------------------- Minggu Ini -------------- */
+
+.saldo-proses .minggu-ini {
+  background-color: #1676ad;
+  width: 340px;
+  padding: 0px 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+}
+.saldo-proses .minggu-ini .time {
+  display: flex;
+  gap: 10px;
+  margin-bottom: -30px;
+}
+.saldo-proses .minggu-ini .jumlah-saldo {
+  display: flex;
+  justify-content: space-between;
+}
+.saldo-proses .minggu-ini .jumlah-saldo .bold {
+  font-weight: bold;
+}
+
+/* --------------------- CARD -------------- */
+.saldo-proses .card-diproses {
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #1676ad;
+  border-radius: 10px;
+  width: 80%;
+  height: 80px;
+  align-items: center;
+  background-color: #1676ad;
+  margin-bottom: 30px;
+}
+.saldo-proses .card-diproses .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  width: 10%;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
+}
+.saldo-proses .card-diproses .right {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 40px 0px 10px;
+  font-size: 18px;
+  color: white;
+  /* border: 1px solid black; */
+}
+.saldo-proses .card-diproses .right .desc p.bold {
+  font-weight: 600;
+}
+.saldo-proses .card-diproses .right .desc .time {
+  display: flex;
+  gap: 10px;
+}
+.saldo-proses .card-diproses .right .desc .time p {
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+.saldo-proses .card-diproses .right .status i {
+  color: white;
+  font-size: 35px;
+}
+
+/* ------------------ TABLE ---------------- */
+.btn-saldo-diproses {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.btn-saldo-diproses .btn-eye {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.btn-saldo-diproses .btn-eye {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+.btn-saldo-diproses .btn-eye i {
+  font-weight: 600;
+}

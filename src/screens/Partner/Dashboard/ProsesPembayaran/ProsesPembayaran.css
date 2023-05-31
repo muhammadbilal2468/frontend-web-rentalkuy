@@ -1,0 +1,36 @@
+.bukti-pembayaran {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ------------------------- */
+
+.btn-proses {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+
+.btn-proses .btn-eye {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.btn-proses .btn-eye {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+.btn-proses .btn-eye i {
+  font-weight: 600;
+}

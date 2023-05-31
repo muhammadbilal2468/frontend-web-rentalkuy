@@ -1,0 +1,49 @@
+.rsb {
+  width: 100%;
+}
+.rsb h2.title {
+  font-size: 32px;
+  line-height: 115px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  border-left: none;
+}
+.card-rsb {
+  background-color: #dff3fe;
+  border-radius: 10px;
+  width: 209px;
+  margin-bottom: 30px;
+}
+.card-rsb h3 {
+  background-color: #1676ad;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* -------------------- BTN Action ------------------- */
+.button-menu-rsb {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.button-menu-rsb .button-rsb {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #868484;
+  height: 25px;
+  width: 40px;
+  font-size: 15px;
+  border: 2px solid #868484;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.button-menu-rsb .button-rsb i {
+  font-weight: 600;
+}

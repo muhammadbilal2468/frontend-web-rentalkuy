@@ -1,0 +1,31 @@
+.selesai {
+  color: #1676ad;
+  font-style: italic;
+}
+
+.btn-selesai {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.btn-selesai .btn-eye {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 45px;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+.btn-selesai .btn-eye {
+  border: 1px solid #1676ad;
+  color: #1676ad;
+}
+.btn-selesai .btn-eye i {
+  font-weight: 600;
+}

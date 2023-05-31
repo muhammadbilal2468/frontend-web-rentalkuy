@@ -1,0 +1,71 @@
+.edit-barang {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "eb-left eb-right";
+  grid-template-columns: 2.5fr 1.5fr;
+  height: 100%;
+}
+/* ----------------- LEFT ----------------- */
+.edit-barang .left {
+  grid-area: eb-left;
+  box-sizing: border-box;
+}
+.edit-barang .left h2 {
+  padding-left: 20px;
+}
+
+.edit-barang .left .input-box {
+  display: grid;
+  grid-template-areas: "label input";
+  grid-template-columns: 1.2fr 1.8fr;
+  width: 100%;
+  gap: 100px;
+  margin-bottom: 15px;
+}
+.edit-barang .left .input-box label {
+  grid-area: label;
+  display: flex;
+  justify-self: end;
+}
+.edit-barang .left .input-box .input {
+  grid-area: input;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-self: flex-start;
+}
+.edit-barang .left .input-box .input.text {
+  padding: 0px 20px;
+  border: 1px solid gray;
+}
+.edit-barang .left .input-box input[type="radio"] {
+  font-size: 10px;
+  height: 18px;
+}
+.edit-barang .left .input-box .input.desc {
+  height: 100px;
+}
+.edit-barang .left button {
+  grid-area: input;
+  border: none;
+  background: #1676ad;
+  color: white;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+/* ----------------- RIGTH ----------------- */
+
+.edit-barang .right {
+  grid-area: eb-right;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.edit-barang .right img {
+  width: 100%;
+  height: 350px;
+}

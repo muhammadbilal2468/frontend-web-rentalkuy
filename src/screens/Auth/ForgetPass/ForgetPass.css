@@ -1,0 +1,139 @@
+.forget-pass-layout {
+  display: grid;
+  grid-template-areas: "fp-left fp-right";
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* ----------------------------- FORGETPASS LEFT -------------- */
+.forget-pass-layout .forget-pass-left {
+  grid-area: fp-left;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  /* border: 1px solid black; */
+}
+.forget-pass-layout .forget-pass-left img {
+  width: 400px;
+  height: 350px;
+}
+
+/* ----------------------------- FORGETPASS RIGHT -------------- */
+.forget-pass-layout .forget-pass-right {
+  grid-area: fp-right;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  background-color: #1676ad;
+  border-radius: 20px;
+  padding: 60px 80px;
+  border: 1px solid black;
+}
+.forget-pass-layout .forget-pass-right h2 {
+  font-size: 28px;
+  color: white;
+  /* margin-bottom: 10px; */
+  text-align: center;
+}
+.forget-pass-layout .forget-pass-right .sub-title {
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  color: rgb(233, 233, 233);
+  text-align: center;
+  /* margin-bottom: 78px; */
+}
+
+/* ----------------------------- INPUT ------------------------ */
+.forget-pass-layout .forget-pass-right form .input_box {
+  height: 40px;
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+.forget-pass-layout .forget-pass-right form .input_box input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  background: #e7e7e7;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  /* border: 2px solid blue; */
+}
+.forget-pass-layout .forget-pass-right form .input_box input:focus {
+  border: 2px solid #334ed7;
+}
+.forget-pass-layout .forget-pass-right form .input_box .icon {
+  position: absolute;
+  line-height: 40px;
+  left: 0;
+  margin-left: 15px;
+  font-size: 20px;
+  color: rgb(153, 144, 144);
+}
+
+.forget-pass-layout .forget-pass-right form .btn-forget-pass {
+  background: #ffffff;
+  color: #1676ad;
+}
+.forget-pass-layout .forget-pass-right form button {
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 18px;
+  background: #ffffff;
+  border: 1px solid rgb(77, 75, 75);
+  color: #1676ad;
+  margin-top: 60px;
+}
+
+/* -------------------------------- RESPONSIVE ----------------- */
+@media screen and (max-width: 1024px) {
+  .forget-pass-layout .forget-pass-right {
+    padding: 60px 60px;
+  }
+  .forget-pass-layout .forget-pass-left img {
+    width: 300px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .forget-pass-layout .forget-pass-right {
+    background-color: #1676ad;
+    border-radius: 20px;
+    padding: 30px 30px;
+  }
+  .forget-pass-layout {
+    display: grid;
+    grid-template-areas: "fp-right fp-right";
+  }
+  .forget-pass-layout .forget-pass-left {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .forget-pass-layout {
+    display: grid;
+    grid-template-areas: "fp-right fp-right";
+  }
+  .forget-pass-layout .forget-pass-left {
+    display: none;
+  }
+  .forget-pass-layout .forget-pass-right form .input_box input {
+    font-size: 13px;
+  }
+}
